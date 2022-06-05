@@ -1,1 +1,71 @@
-идфридфр
+\chapter{Листинги}
+
+\section{Автоматические тесты кодовой базы}
+\label{list_sec:autotests}
+\begin{ListingEnv}
+	\caption{Тестирование успешной предобработки сценария геймификации}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/scenario_parse_test.kt}
+	%\begin{lstlisting}[language=Kotlin]
+	%\input{flesh/listings/GeofenceBroadcastReceiver}
+	%\end{lstlisting}
+	\label{list:scenario_parse_test}
+\end{ListingEnv}
+
+\begin{ListingEnv}
+	\caption{Тестирование предобработки конкретного сценария}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/scenario_mmcs_test.kt}
+	%\begin{lstlisting}[language=Kotlin]
+	%\input{flesh/listings/GeofenceBroadcastReceiver}
+	%\end{lstlisting}
+	\label{list:scenario_mmcs_test}
+\end{ListingEnv}
+
+\begin{ListingEnv}
+	\caption{Проверка корректной обработки полиморфных объектов сценария}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/scenario_poly_test.kt}
+	%\begin{lstlisting}[language=Kotlin]
+	%\input{flesh/listings/GeofenceBroadcastReceiver}
+	%\end{lstlisting}
+	\label{list:scenario_poly_test}
+\end{ListingEnv}
+
+\section{Широковещательные сообщения о точке интереса на карте}
+\label{list_sec:broadcasting}
+\begin{ListingEnv}
+	\caption{Действие, вызываемое на вход в отслеживаемую точку интереса на карте}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/GeofenceBroadcastReceiver_OnEntered.kt}
+	\label{list:geofence_brr_on_entered}
+\end{ListingEnv}
+
+\begin{ListingEnv}
+	\caption{Код обработки полученного широковещательного сообщения о точке интереса на карте}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/GeofenceBroadcastReceiver_OnReceive.kt}
+	\label{list:geofence_brr_on_receive}
+\end{ListingEnv}
+
+\section{Генерация таймеров для виртуальных препятствий}
+\begin{ListingEnv}
+	\caption{Генерация таймера для инициализации препятствия}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/generate_obstacle_start_timer.kt}
+	\label{list:generate_obstacle_start_timer}
+\end{ListingEnv}
+
+\begin{ListingEnv}
+	\caption{Генерация таймера для валидации активного препятствия}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=Kotlin]{flesh/listings/generate_obstacle_finish_timer.kt}
+	\label{list:generate_obstacle_finish_timer}
+\end{ListingEnv}
