@@ -34,11 +34,13 @@
 	\end{itemize}
 \end{enumerate}
 \smallskip
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{flesh/somefunc/manifest_permissions.png}
-	\caption{\label{fig:manifest_permissions}Пример объявления разрешений в AndroidManifest.xml}
-\end{figure}
+\begin{ListingEnv}[H]
+	\caption{Пример объявления разрешений в AndroidManifest.xml}
+	\UseRawInputEncoding
+	\footnotesize
+	\lstinputlisting[language=XML]{flesh/somefunc/manifest_permissions.xml}
+	\label{list:manifest_permissions}
+\end{ListingEnv}
 
 
 После объявления разрешений требуется корректно их обработать в самом приложении – для каждого запрошенного разрешения проверить наличие разрешения от пользователя:
